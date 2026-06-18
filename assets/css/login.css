@@ -1,0 +1,29 @@
+.login-form-container {
+  background: "white";
+  margin-top: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-left-container {
+  background: #5441a7;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 10px;
+  color: white;
+  width: 250px;
+  text-align: center;
+}
+.form-logo img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+
+
+
