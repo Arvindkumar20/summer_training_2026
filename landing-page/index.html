@@ -6,45 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 
 <body>
     <header class="header">
 
         <div class="web-logo">
+            
             <img src="./assets/images/web-logo.png" alt="website logo">
         </div>
 
-        <nav>
+        <nav class="desktop-nav">
             <ul>
                 <li><a href="./">
                         Home
                     </a>
-                    <div class="dot"></div>
+
                 </li>
                 <li>
                     <a href="./services.html">Service</a>
-                    <div class="dot"></div>
+
 
                 </li>
                 <li>
                     <a href="./about-us.html">
                         About Us
                     </a>
-                    <div class="dot"></div>
+
                 </li>
                 <li>
                     <a href="./contact.html">
                         Contact us
                     </a>
-                    <div class="dot"></div>
+
                 </li>
             </ul>
         </nav>
 
-        <div>
-            <button>phone</button>
-            <button>let's Talk</button>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="./">
+                        Home
+                    </a>
+
+                </li>
+                <li>
+                    <a href="./services.html">Service</a>
+
+
+                </li>
+                <li>
+                    <a href="./about-us.html">
+                        About Us
+                    </a>
+
+                </li>
+                <li>
+                    <a href="./contact.html">
+                        Contact us
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+
+        
+        <div class="three-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+        <div class="action-btn">
+            <button class="phone-btn">
+                <i class="fa-solid fa-phone" size="30"></i>
+            </button>
+            <button class="msg-btn">let's Talk <span><i class="fa-solid fa-arrow-down rotate"></i></span></button>
         </div>
 
     </header>
