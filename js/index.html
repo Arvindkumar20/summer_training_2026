@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <main class="flex items-center justify-center mx-auto my-20">
-        <section class="w-md h-md border-1 border-red-400 rounded shadow-md p-5">
+    <main class="flex items-center justify-center mx-auto my-20 gap-5 ">
+        <section class="w-md h-md border-1 border-red-400 rounded shadow-md p-5 ">
             <h1 class="text-blue-700 text-center lg:text-3xl md:text-xl  text-lg font-bold pb-7">
                 Add Employee
             </h1>
@@ -19,18 +19,18 @@
                 <div class="grid gap-2 ">
 
                     <label for="EmployeeName" id="star" class="text-gray-700 text-md font-medium">Employee Name</label>
-                    <input id="name" name="name" required maxlength="40" minlength="3" type="text" class="outline-none border-2 border-gray-400 rounded py-1 px-3"
-                        placeholder="Employee Name">
+                    <input id="name" name="name" required maxlength="40" minlength="3" type="text"
+                        class="outline-none border-2 border-gray-400 rounded py-1 px-3" placeholder="Employee Name">
                 </div>
                 <div class="grid gap-2 ">
                     <label for="EmployeeEmail" class="text-gray-700 text-md font-medium">Employee Email</label>
-                    <input id="email" type="text" name="email" class="outline-none border-2 border-gray-400 rounded py-1 px-3"
-                        placeholder="Employee Email">
+                    <input id="email" type="text" name="email"
+                        class="outline-none border-2 border-gray-400 rounded py-1 px-3" placeholder="Employee Email">
                 </div>
                 <div class="grid gap-2 ">
                     <label for="EmployeeSalary" class="text-gray-700 text-md font-medium">Employee Salary</label>
-                    <input id="salary" type="text" name="salary" class="outline-none border-2 border-gray-400 rounded py-1 px-3"
-                        placeholder="Employee Salary">
+                    <input id="salary" type="text" name="salary"
+                        class="outline-none border-2 border-gray-400 rounded py-1 px-3" placeholder="Employee Salary">
                 </div>
                 <div class="grid gap-2 ">
                     <label for="EmployeeRole" class="text-gray-700 text-md font-medium">Employee Role</label>
@@ -47,6 +47,13 @@
                 <button id="submit" type="submit"
                     class="w-2/3 cursor-pointer py-2 text-center bg-blue-600 text-white rounded mx-auto my-5">Submit</button>
             </form>
+
+        </section>
+
+
+
+        <section id="empSection"
+            class="flex flex-col rounded  items-center justify-center w-md gap-5 h-[565px] overflow-y-scroll border-1 border-red-400 rounded shadow-md p-5">
 
         </section>
 
