@@ -34,8 +34,11 @@ function renderEmpList(emps) {
     empContainer.appendChild(roleTag);
     empContainer.appendChild(experienceTag);
 
-    empSection.appendChild(empContainer);
+    empSection.prepend(empContainer);
+
   });
+  
+  window.screenTop(0)
 }
 
 
@@ -73,7 +76,7 @@ const empList = [
     salary: "raj8764654",
   },
    {
-    id: 2,
+    id: 3,
     email: "kumararvind60700@gmail.com",
     experience: "fewrfwe",
     name: "class 1",
@@ -81,7 +84,7 @@ const empList = [
     salary: "raj8764654",
   },
    {
-    id: 2,
+    id: 4,
     email: "kumararvind60700@gmail.com",
     experience: "fewrfwe",
     name: "class 1",
@@ -98,19 +101,23 @@ const empList = [
   },
   
 ];
+let empCount=0;
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  empList.push({
-    name: empName.value,
-    email: email.value,
-    salary: salary.value,
-    role: role.value,
-    experience: experience.value,
-  });
-  console.log(empList);
+  empCount+=1;
+  // empList.push({
+  //    id:empList.length+1,
+  //   name: empName.value,
+  //   email: email.value,
+  //   salary: salary.value,
+  //   role: role.value,
+  //   experience: experience.value,
+  // });
+  // console.log(empList);
+
   renderEmpList([
     {
-      id: Math.ceil(Math.random() * 10 + 1),
+      id:empCount,
       name: empName.value,
       email: email.value,
       salary: salary.value,
