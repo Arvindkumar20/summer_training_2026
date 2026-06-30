@@ -1,0 +1,92 @@
+requerements=>
+client side->
+1. functional=>
+    a.prompt form (author name,prompt),prompt with voice.
+    b.show generated image in live time.
+    c.history{
+        download image,
+        delete image,
+        filter(date, time, category),
+    }
+
+
+
+
+server side->
+
+sign up api 
+api name-> https://www.api.com/api/v1/sign-up || method post
+body{
+    userName:"",
+    email:""
+    password:""
+}
+
+ decide response  {
+    userName:"",
+    email:""
+   message:"",status:success/fail,
+   token:""
+   }
+
+api name-> https://www.api.com/api/v1/sign-in || method post
+
+body{
+    email:""
+    password:""
+}
+
+ decide response  {
+    userName:"",
+    email:""
+   message:"",status:success/fail,
+   token:""
+   }
+
+
+1.create api with method ( method -> post)
+api name => https://www.api.com/api/v1/generate-image || method post
+
+body{
+    autor:"",
+    prompt:""
+}
+
+
+ decide response  {
+    imageUrl:"",
+    message:"",
+    status:success/fail
+}
+2.create get history api => method get
+api name ->https://www.api.com/api/v1/generated-images/userId (spacific user history);
+decide response  {
+    images:[imgUrl1,imgUrl2],
+    message:"",
+    status:success/fail
+}
+
+3. delete image api-> method delete
+api name ->https://www.api.com/api/v1/delete-image/imageId/userId (delete spscific image by user id);
+decide response  {
+    message:"",
+    status:success/fail
+}4. delete all images api-> method delete
+api name ->https://www.api.com/api/v1/delete-all-images/userId (delete all images by user id);
+decide response  {
+    message:"",
+    status:success/fail
+}
+
+
+
+2.non functional=>
+
+a.manage image quality
+b.manage response 
+c.availability
+d.cost management 
+e.deadline
+
+
+

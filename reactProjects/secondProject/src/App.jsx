@@ -1,58 +1,33 @@
-import { useState } from "react";
-import { Navbar } from "./Navbar";
-
-export const App = () => {
-  const [name, setName] = useState("Arvind");
-  const [email, setEmail] = useState("arvind@gmail.com");
-  const [isFormSubmit, setIsFormSubmit] = useState(false);
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    setIsFormSubmit(true);
-  };
-
+export default function App() {
   return (
-    <>
-      <form>
-        <input type="text" onChange={handleNameChange} name={"name"} />
+    <div className="flex flex-col items-center justify-center shadow-2xl rounded-2xl w-1/2 py-10 px-7 mx-auto border">
+      <h1 className="text-3xl font-bold text-gray-700 my-5">
+        {" "}
+        Enter your Prompt to Generate Image
+      </h1>
+      <form className="space-y-5">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Auther Name"
+          className="outline-none border py-2 px-3 rounded w-full"
+        />
+        <textarea
+          type="text"
+          className="outline-none border py-2 px-3 rounded w-full"
+          name="prompt"
+          placeholder="enter your prompt here"
+        />
 
-        <input type="text" onChange={handleEmailChange} />
-
-        {isFormSubmit && (
-          <>
-            <p>Name: {name}</p>
-            <p>Email: {email}</p>
-
-            <button type="button" onClick={() => setIsFormSubmit(false)}>
-              Hide{" "}
-            </button>
-          </>
-        )}
-
-        <button type="submit" onClick={handleClick}>
-          Submit
-        </button>
+        <div className="flex items-center justify-center mx-auto">
+          <button
+            type="submit"
+            className="outline-none border py-2 px-3 rounded w-2/3 cursor-pointer bg-blue-600 text-white "
+          >
+            Generate Image
+          </button>
+        </div>
       </form>
-
-      <Navbar/>
-      <Navbar/>
-      <Navbar/>
-      <Navbar/>
-      <Navbar/>
-    </>
+    </div>
   );
-};
-
-// function App(){
-
-// }
-
-// export default App;
+}
