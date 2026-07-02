@@ -12,7 +12,10 @@ export default function Navbar() {
         />
       </div>
 
-      <Button className="py-2 px-3 bg-blue-600 rounded" type="submit">
+      <Button
+        className="py-2 px-3 bg-blue-600 rounded text-white cursor-pointer"
+        type="submit"
+      >
         History
       </Button>
 

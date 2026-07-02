@@ -4,7 +4,7 @@ export default function Form() {
   return (
     <div>
         
-    <div className="flex flex-col items-center justify-center shadow-2xl rounded-2xl w-1/2 py-10 px-7 mx-auto border">
+    <div className="flex w-full h-100 flex-col items-center justify-center shadow-2xl rounded-2xl  py-10 px-7 mx-auto border">
         <h1 className="text-3xl font-bold text-gray-700 my-5">
           Enter your Prompt to Generate Image
         </h1>
